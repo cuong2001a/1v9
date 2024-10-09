@@ -1,0 +1,28 @@
+.shadow-xl {
+    box-shadow: (0 0 #0000) (0 0 #0000) (0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a);
+}
+.bg-card{
+    background-color: rgb(16 13 31);
+}
+body {
+    color: white
+}
+.px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.py-3{
+    padding-bottom: .75rem;
+    padding-top: .75rem;
+}
+.gap-10{
+    gap: 2.5rem;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+ul {
+    list-style-type: none;
+    margin-bottom: 0
+}
