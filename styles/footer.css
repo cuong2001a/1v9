@@ -1,0 +1,10 @@
+
+@keyframes pulse {
+    50% {
+        opacity: .5
+    }
+  }
+.line-footer{
+    background-image: linear-gradient(to right,#a855f7, #a855f700 );
+    animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite
+}
