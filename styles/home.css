@@ -13,7 +13,7 @@
 .box-roblox{
     top: 50%;
     left: 50%;
-    transform: translateY(35%);
+    transform: translate(-50%, -50%);
 }
 .border-roblox{
     border: 1px solid #1f29374d;
@@ -47,4 +47,36 @@
     padding-right: 1.25rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+}
+.perspective, .perspective-child{
+    transform: perspective(50em) rotateY(-12deg) rotateX(-4deg) scaleX(1);
+}
+.perspective-child-right{
+    transform: perspective(50em) rotateY(12deg) rotateX(-1deg) scaleX(1);
+    max-width: 100%;
+}
+.perspective{
+    transform-style:preserve-3d
+}
+.card{
+    height: 250px;
+    width: 450px;
+}
+.holder1{
+    overflow-x: auto !important;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 500%;
+}
+.line-card{
+    background-image: linear-gradient(to right, #a855f7, #2563eb);
+}
+.image-height{
+    height: 600px;
+}
+.item-banner{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
