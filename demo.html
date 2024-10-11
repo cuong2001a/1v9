@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+.marquee-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.marquee-wrapper .marquee-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 1rem;
+  cursor: grab;
+}
+.marquee-wrapper .marquee-content .card-testimonial {
+  max-width: 400px;
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #f5f5f5;
+}
+.marquee-wrapper .marquee-content .card-testimonial article picture {
+  position: relative;
+  min-width: 200px;
+}
+.marquee-wrapper .marquee-content .card-testimonial article picture img {
+  width: 100%;
+  height: 340px;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 15%;
+  object-position: 50% 15%;
+}
+.marquee-wrapper .marquee-content .card-testimonial article h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-block: 1rem;
+}
+.marquee-wrapper .marquee-content .card-testimonial article article.short-description p {
+  font-family: var(--ff-heading);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 1024px) {
+  .marquee-wrapper {
+    overflow: auto;
+  }
+}
+.scrollingX {
+  animation: scroll 45s linear infinite;
+}
+.marquee-wrapper:hover .scrollingX {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+</style>
+
+<body>
+    <div class="marquee-wrapper" style="user-select: none;">
+        <div class="marquee-content scrollingX">
+          <div class="card-testimonial">
+            <article>
+              <picture>
+                <source media="(min-width: 768px)" srcset="1.jpg">
+                <img src="1.jpg" alt="">
+              </picture>
+              <h4>Title 1</h4>
+              <article class="short-description">
+                <p>Description 1</p>
+              </article>
+            </article>
+          </div>
+          <div class="card-testimonial">
+            <article>
+              <picture>
+                <source media="(min-width: 768px)" srcset="2.jpg">
+                <img src="2.jpg" alt="">
+              </picture>
+              <h4>Title 2</h4>
+              <article class="short-description">
+                <p>Description 2</p>
+              </article>
+            </article>
+          </div>
+        </div>
+      </div>
+
+</body>
+<script>
+    "use strict";
+const parentMarquee = document.querySelector(".marquee-wrapper");
+const childMarquee = document.querySelector(".marquee-content");
+// will clone the child node of Parent Marquee or copy the sibling 
+const adChildMarquee = document.querySelector(".marquee-content").cloneNode(true);
+parentMarquee.appendChild(adChildMarquee);
+// code below will allow a draggable feature for the marquee carousel 
+const ulParentListContainer = document.querySelector('.marquee-wrapper');
+let isDragging = false;
+const dragStart = (e) => {
+    if (!isDragging)
+        return;
+    ulParentListContainer.scrollLeft -= e.movementX;
+};
+const stopDragging = () => {
+    isDragging = false;
+};
+// when mouse is pressed 
+ulParentListContainer.addEventListener('mousedown', () => isDragging = true);
+// when mouse is move to left
+ulParentListContainer.addEventListener('mousemove', dragStart);
+// when mouse pressed is released
+window.addEventListener('mouseup', stopDragging);
+
+</script>
+</html>
