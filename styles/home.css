@@ -1,3 +1,16 @@
+.btn-border{
+    border: 1px solid rgb(192 132 252);
+    color: rgb(192 132 252);
+    font-size: 16px;
+}
+.btn-border:hover{
+    background-color: rgb(168 85 247/var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+    color: #fff;
+}
+.border-hover:hover{
+    border: 1px solid rgb(192 132 252);
+}
 .btn-roblox{
     border-color:#c084fc33;
     border-width: 0;
@@ -87,21 +100,13 @@
     margin-top: 24px;
 }
 
-
-
-
 .slider {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 200px; /* Chiều cao slider */
-    display: flex;
-    justify-content: center; /* Căn giữa các block */
-    align-items: center;
 }
 
 .slides {
-    display: flex;
     animation: scroll 12s linear infinite; /* Tốc độ cuộn */
 }
 
@@ -122,4 +127,26 @@
     100% {
         transform: translateX(0); /* Về vị trí ban đầu */
     }
+}
+
+.holderBox{
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+.holderBox .carousel {
+    display: flex;
+    transition: transform 0.5s linear;
+}
+.holderBox .card {
+    min-width: 100px;
+    height: 150px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-size: 20px;
 }
