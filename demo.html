@@ -5,132 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
 </head>
 <style>
-.marquee-wrapper {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  gap: 1rem;
-  border-radius: 1rem;
+.item {
+    text-align: center;
+    background: #4a90e2;
+    padding: 20px;
+    border-radius: 5px;
 }
-.marquee-wrapper .marquee-content {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  gap: 1rem;
-  cursor: grab;
-}
-.marquee-wrapper .marquee-content .card-testimonial {
-  max-width: 400px;
-  background-color: #333;
-  padding: 1rem;
-  border-radius: 1rem;
-  color: #f5f5f5;
-}
-.marquee-wrapper .marquee-content .card-testimonial article picture {
-  position: relative;
-  min-width: 200px;
-}
-.marquee-wrapper .marquee-content .card-testimonial article picture img {
-  width: 100%;
-  height: 340px;
-  border-radius: 0.5rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: 50% 15%;
-  object-position: 50% 15%;
-}
-.marquee-wrapper .marquee-content .card-testimonial article h4 {
-  font-size: 20px;
-  text-transform: capitalize;
-  margin-block: 1rem;
-}
-.marquee-wrapper .marquee-content .card-testimonial article article.short-description p {
-  font-family: var(--ff-heading);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-  margin-bottom: 1.2rem;
-}
-@media (max-width: 1024px) {
-  .marquee-wrapper {
-    overflow: auto;
-  }
-}
-.scrollingX {
-  animation: scroll 45s linear infinite;
-}
-.marquee-wrapper:hover .scrollingX {
-  animation-play-state: paused;
-}
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - 1rem));
-  }
+.item img {
+    max-width: 100%;
+    border-radius: 5px;
 }
 </style>
 
 <body>
-    <div class="marquee-wrapper" style="user-select: none;">
-        <div class="marquee-content scrollingX">
-          <div class="card-testimonial">
-            <article>
-              <picture>
-                <source media="(min-width: 768px)" srcset="1.jpg">
-                <img src="1.jpg" alt="">
-              </picture>
-              <h4>Title 1</h4>
-              <article class="short-description">
-                <p>Description 1</p>
-              </article>
-            </article>
-          </div>
-          <div class="card-testimonial">
-            <article>
-              <picture>
-                <source media="(min-width: 768px)" srcset="2.jpg">
-                <img src="2.jpg" alt="">
-              </picture>
-              <h4>Title 2</h4>
-              <article class="short-description">
-                <p>Description 2</p>
-              </article>
-            </article>
-          </div>
-        </div>
-      </div>
-
+  <div class="owl-carousel">
+    <div class="item"><img src="image1.jpg" alt="Image 1"></div>
+    <div class="item"><img src="image2.jpg" alt="Image 2"></div>
+    <div class="item"><img src="image3.jpg" alt="Image 3"></div>
+    <div class="item"><img src="image4.jpg" alt="Image 4"></div>
+    <div class="item"><img src="image5.jpg" alt="Image 5"></div>
+    <div class="item"><img src="image6.jpg" alt="Image 6"></div>
+</div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
 <script>
-    "use strict";
-const parentMarquee = document.querySelector(".marquee-wrapper");
-const childMarquee = document.querySelector(".marquee-content");
-// will clone the child node of Parent Marquee or copy the sibling 
-const adChildMarquee = document.querySelector(".marquee-content").cloneNode(true);
-parentMarquee.appendChild(adChildMarquee);
-// code below will allow a draggable feature for the marquee carousel 
-const ulParentListContainer = document.querySelector('.marquee-wrapper');
-let isDragging = false;
-const dragStart = (e) => {
-    if (!isDragging)
-        return;
-    ulParentListContainer.scrollLeft -= e.movementX;
-};
-const stopDragging = () => {
-    isDragging = false;
-};
-// when mouse is pressed 
-ulParentListContainer.addEventListener('mousedown', () => isDragging = true);
-// when mouse is move to left
-ulParentListContainer.addEventListener('mousemove', dragStart);
-// when mouse pressed is released
-window.addEventListener('mouseup', stopDragging);
+$(document).ready(function(){
+  var $owl = $(".owl-carousel");
 
+  $owl.owlCarousel({
+    items: 3, // Số lượng ảnh trên mỗi hàng
+    loop: true, // Lặp lại carousel
+    autoplay: true, // Tự động chuyển động
+    autoplayTimeout: 5000, // Thời gian giữa các lần chuyển (ms)
+    autoplayHoverPause: true, // Dừng khi hover
+    margin: 10, // Khoảng cách giữa các ảnh
+    autoplaySpeed: 1000 // Thời gian chuyển động (ms)
+  });
+
+  // Biến kiểm soát chiều chuyển động
+  var direction = 1; // 1 cho chuyển sang phải, -1 cho chuyển sang trái
+
+  // Hàm đổi chiều
+  function changeDirection() {
+    direction = -direction; // Đổi chiều
+    $owl.trigger('next.owl.carousel', [300]); // Chuyển ảnh
+  }
+
+  // Theo dõi sự kiện khi hoàn thành một vòng
+  $owl.on('changed.owl.carousel', function(event) {
+    if (event.item.index === 0 && direction === -1) {
+      setTimeout(changeDirection, 5000); // Chờ trước khi đổi chiều
+    } else if (event.item.index === $owl.find('.item').length - 1 && direction === 1) {
+      setTimeout(changeDirection, 5000); // Chờ trước khi đổi chiều
+    }
+  });
+});
 </script>
 </html>

@@ -75,9 +75,56 @@
 .image-height{
     height: 600px;
 }
+.image-height img{
+    opacity: 0.1;
+}
+.image-height img:hover{
+    opacity: 0.5;
+}
 .item-banner{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
 
+.collapse-content {
+    display: none; /* Ẩn nội dung ban đầu */
+    margin-top: 24px;
+}
+
+
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px; /* Chiều cao slider */
+    display: flex;
+    justify-content: center; /* Căn giữa các block */
+    align-items: center;
+}
+
+.slides {
+    display: flex;
+    animation: scroll 12s linear infinite; /* Tốc độ cuộn */
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-66.66%); /* Di chuyển sang trái 2/3 */
+    }
+}
+
+@keyframes reverseScroll {
+    0% {
+        transform: translateX(-66.66%); /* Bắt đầu từ vị trí cuối cùng */
+    }
+    100% {
+        transform: translateX(0); /* Về vị trí ban đầu */
+    }
+}
