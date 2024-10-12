@@ -129,3 +129,24 @@
     }
 }
 
+.holderBox{
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+.holderBox .carousel {
+    display: flex;
+    transition: transform 0.5s linear;
+}
+.holderBox .card {
+    min-width: 100px;
+    height: 150px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}

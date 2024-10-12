@@ -59,17 +59,18 @@ document.querySelectorAll('.collapse-button').forEach(button => {
 });
 
 // AOS animation
-AOS.init(); // Khởi tạo AOS
+$(function() {
+    const $carousel = $('.carousel');
+    const cardWidth = $('.card').outerWidth(true);
+    const totalWidth = $('.card').length * cardWidth;
+    let position = 0, direction = 1;
 
-const slides = document.getElementById('slides');
-  const scrollDuration = 8000; // Thời gian cuộn từ phải sang trái (mili giây)
-
-  function startScroll() {
-      slides.style.animation = `scroll ${scrollDuration}ms linear infinite`;
-      setTimeout(() => {
-          slides.style.animation = `reverseScroll ${scrollDuration}ms linear forwards`;
-          setTimeout(startScroll, scrollDuration); // Bắt đầu lại sau khi cuộn ngược
-      }, scrollDuration);
-  }
-
-  startScroll(); // Bắt đầu tự động cuộn
+    setInterval(() => {
+        position += direction * 2;
+        if (position >= totalWidth - $('.container').width() || position <= 0) {
+            direction *= -1;
+            position += direction * 2; // Điều chỉnh vị trí để không bị dừng
+        }
+        $carousel.css('transform', `translateX(-${position}px)`);
+    }, 50);
+});
