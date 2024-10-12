@@ -1,7 +1,6 @@
 // slider 
 $(document).ready(function () {
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
+        owl.owlCarousel({
         loop: true,       // Enable looping
         margin: 24,       // Space between items
         nav: false,       // Disable default nav

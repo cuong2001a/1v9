@@ -1,4 +1,3 @@
-
 @keyframes pulse {
     50% {
         opacity: .5
@@ -8,3 +7,52 @@
     background-image: linear-gradient(to right,#a855f7, #a855f700 );
     animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite
 }
+.footer .item-game{
+    padding-inline: 0;
+}
+.footer .logo-payment{
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+.footer .logo-payment::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+@media screen and (max-width: 767px){
+    .itm-footer-first{
+        width: "fit-content";
+    }
+    .footer .footer-first{
+        gap: 2.5rem;
+    } 
+    .footer .item-game{
+        padding-inline: 2.5rem;
+    }
+    .footer .row{
+        row-gap: 2.5rem;
+    }
+    .more-game{
+        padding-inline: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .itm-footer-first{
+        width: 100%;
+    }
+    .footer .footer-first{
+        gap: 2.5rem;
+    } 
+    .footer .row{
+        row-gap: 2.5rem;
+    }
+    .footer .more-game{
+        row-gap:16px;
+        padding-inline: 0.5rem;
+    }
+    .footer .more-game li{
+        margin-top: 1rem
+    }
+}
+

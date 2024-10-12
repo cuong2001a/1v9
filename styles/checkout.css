@@ -123,3 +123,6 @@
 .box-chat:hover {
   background-color: #c084fc66;
 }
+.min-h-4{
+  min-height: 1rem;
+}

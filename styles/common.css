@@ -198,8 +198,8 @@ body {
 }
 
 .py-3 {
-  padding-bottom: 0.75rem;
-  padding-top: 0.75rem;
+  padding-bottom: 0.75rem !important;
+  padding-top: 0.75rem !important;
 }
 .mt-5{
     margin-top: 1.25rem !important;
@@ -217,6 +217,9 @@ body {
   margin-bottom: 24px;
 }
 
+.gap-3{
+  gap: 0.75rem !important;
+}
 .gap-10 {
   gap: 2.5rem;
 }
@@ -325,6 +328,10 @@ p {
   color: rgb(74 222 128);
 }
 
+.text-purple-300{
+  color: rgb(216 180 254);
+}
+
 .text-purple-400 {
   color: rgb(192 132 252);
 }
@@ -336,6 +343,9 @@ p {
 }
 .text-gray-300-20 {
   color: #d1d5db33;
+}
+.text-gray-400 {
+  color: rgb(156 163 175)
 }
 .bg-none {
   background: inherit;
@@ -491,7 +501,6 @@ div[class^="col-"] {
     margin-right: 5rem;
 }
 
-
 .collapse {
   display: none;
 }
@@ -500,4 +509,11 @@ div[class^="col-"] {
 }
 .active .toggle-icon {
   transform: rotate(-90deg);
+}
+
+@media screen and (min-width: 1201px) {
+  .col-xl-1-5{
+    flex: 0 0 auto;
+    width: 20%
+  }
 }
