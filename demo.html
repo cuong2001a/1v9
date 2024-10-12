@@ -1,71 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
+    <title>Continuous Carousel</title>
+    <style>
+     
+        .container {
+            width: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s linear;
+        }
+        .card {
+            min-width: 100px;
+            height: 150px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
 </head>
-<style>
-.item {
-    text-align: center;
-    background: #4a90e2;
-    padding: 20px;
-    border-radius: 5px;
-}
-.item img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-</style>
-
 <body>
-  <div class="owl-carousel">
-    <div class="item"><img src="image1.jpg" alt="Image 1"></div>
-    <div class="item"><img src="image2.jpg" alt="Image 2"></div>
-    <div class="item"><img src="image3.jpg" alt="Image 3"></div>
-    <div class="item"><img src="image4.jpg" alt="Image 4"></div>
-    <div class="item"><img src="image5.jpg" alt="Image 5"></div>
-    <div class="item"><img src="image6.jpg" alt="Image 6"></div>
-</div>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <div class="container">
+        <div class="carousel">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+            <div class="card">Card 4</div>
+            <div class="card">Card 5</div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(document).ready(function(){
-  var $owl = $(".owl-carousel");
+$(function() {
+    const $carousel = $('.carousel');
+    const cardWidth = $('.card').outerWidth(true);
+    const totalWidth = $('.card').length * cardWidth;
+    let position = 0, direction = 1;
 
-  $owl.owlCarousel({
-    items: 3, // Số lượng ảnh trên mỗi hàng
-    loop: true, // Lặp lại carousel
-    autoplay: true, // Tự động chuyển động
-    autoplayTimeout: 5000, // Thời gian giữa các lần chuyển (ms)
-    autoplayHoverPause: true, // Dừng khi hover
-    margin: 10, // Khoảng cách giữa các ảnh
-    autoplaySpeed: 1000 // Thời gian chuyển động (ms)
-  });
-
-  // Biến kiểm soát chiều chuyển động
-  var direction = 1; // 1 cho chuyển sang phải, -1 cho chuyển sang trái
-
-  // Hàm đổi chiều
-  function changeDirection() {
-    direction = -direction; // Đổi chiều
-    $owl.trigger('next.owl.carousel', [300]); // Chuyển ảnh
-  }
-
-  // Theo dõi sự kiện khi hoàn thành một vòng
-  $owl.on('changed.owl.carousel', function(event) {
-    if (event.item.index === 0 && direction === -1) {
-      setTimeout(changeDirection, 5000); // Chờ trước khi đổi chiều
-    } else if (event.item.index === $owl.find('.item').length - 1 && direction === 1) {
-      setTimeout(changeDirection, 5000); // Chờ trước khi đổi chiều
-    }
-  });
+    setInterval(() => {
+        position += direction * 2;
+        if (position >= totalWidth - $('.container').width() || position <= 0) {
+            direction *= -1;
+            position += direction * 2; // Điều chỉnh vị trí để không bị dừng
+        }
+        $carousel.css('transform', `translateX(-${position}px)`);
+    }, 50);
 });
 </script>
+</body>
 </html>
