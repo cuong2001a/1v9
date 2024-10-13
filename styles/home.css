@@ -144,7 +144,35 @@
   /* Chiều rộng tổng bằng 4 lần chiều rộng của 1 card */
 }
 
+.holderBoxCarousel1 {
+  display: flex;
+  transition: transform 0.5s linear;
+  width: 100%;
+  /* Chiều rộng tổng bằng 4 lần chiều rộng của 1 card */
+}
+
 .holderBoxCard {
   min-width: 40%;
   height: 250px;
+}
+
+.holderBoxCard1 {
+  min-width: 40%;
+  height: 250px;
+  animation: scroll-x 15s linear infinite alternate; /* Sử dụng 'alternate' để cuộn qua lại */
+
+}
+.scroll-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-x 10s linear infinite alternate; /* Sử dụng 'alternate' để cuộn qua lại */
+}
+
+@keyframes scroll-x {
+  0% {
+      transform: translateX(0); /* Bắt đầu từ bên phải */
+  }
+  100% {
+      transform: translateX(-175%); /* Cuộn sang bên trái */
+  }
 }
