@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js" integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./styles/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
+        integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
 <body>
-    <div class="header d-xl-block d-none">
-        <nav
-            class="bg-card header-nav d-lg-flex">
+    <header class="header d-xl-block d-none">
+        <nav class="bg-card header-nav d-lg-flex">
             <div class="header-logo d-flex  align-items-center">
                 <a href="/" class="opacity-80 hover:opacity-100">
-                    <img width="50" height="50" alt="1v9.GG Logo" src="./images/logo.png" />
+                    <img width="60" height="60" alt="1v9.GG Logo" src="./images/logo.png" />
                 </a>
                 <button type="button" class="btn-roblox px-4 rounded-20">
                     <div class="d-flex gap-2 align-items-center justify-content-between">
@@ -28,9 +38,8 @@
                                 Roblox
                             </span>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
-                            class="w-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
                             </path>
                         </svg>
@@ -40,36 +49,53 @@
             <div class="header-menu d-flex gap-10 h-full align-items-center">
                 <ul class="d-flex gap-10 align-items-center text-sm text-gray-200">
                     <li class="relative">
-                        <a href="#"
-                            class="link-hover flex gap-1 items-center hover:text-purple-300 cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M9.25 9a2.75 2.75 0 1 1 5.5 0a2.75 2.75 0 0 1-5.5 0M12 7.75a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5m0 4.5c-1.196 0-2.315.24-3.164.665c-.803.402-1.586 1.096-1.586 2.085v.063c-.002.51-.004 1.37.81 1.959c.378.273.877.448 1.495.559c.623.112 1.422.169 2.445.169s1.822-.057 2.445-.169c.618-.111 1.117-.286 1.495-.56c.814-.589.812-1.448.81-1.959V15c0-.99-.783-1.683-1.586-2.085c-.849-.424-1.968-.665-3.164-.665M8.75 15c0-.115.113-.421.757-.743c.6-.3 1.48-.507 2.493-.507s1.894.207 2.493.507c.644.322.757.628.757.743c0 .604-.039.697-.19.807c-.122.088-.373.206-.88.298c-.502.09-1.203.145-2.18.145s-1.678-.055-2.18-.145c-.507-.092-.758-.21-.88-.298c-.152-.11-.19-.203-.19-.807"/><path d="M8.723 2.051c1.444-.494 2.34-.801 3.277-.801s1.833.307 3.277.801l.727.25c1.481.506 2.625.898 3.443 1.23c.412.167.767.33 1.052.495c.275.16.55.359.737.626c.185.263.281.587.341.9c.063.324.1.713.125 1.16c.048.886.048 2.102.048 3.678v1.601c0 6.101-4.608 9.026-7.348 10.224l-.027.011c-.34.149-.66.288-1.027.382c-.387.1-.799.142-1.348.142c-.55 0-.96-.042-1.348-.142c-.367-.094-.687-.233-1.027-.382l-.027-.011C6.858 21.017 2.25 18.092 2.25 11.99v-1.6c0-1.576 0-2.792.048-3.679c.025-.446.062-.835.125-1.16c.06-.312.156-.636.34-.9c.188-.266.463-.465.738-.625c.285-.165.64-.328 1.052-.495c.818-.332 1.962-.724 3.443-1.23zM12 2.75c-.658 0-1.305.212-2.92.764l-.572.196c-1.513.518-2.616.896-3.39 1.21a7 7 0 0 0-.864.404a2 2 0 0 0-.208.139a.4.4 0 0 0-.055.05a.4.4 0 0 0-.032.074q-.03.082-.063.248a7 7 0 0 0-.1.958c-.046.841-.046 2.015-.046 3.624v1.574c0 5.176 3.87 7.723 6.449 8.849c.371.162.586.254.825.315c.228.059.506.095.976.095s.748-.036.976-.095c.24-.06.454-.153.825-.315c2.58-1.126 6.449-3.674 6.449-8.849v-1.574c0-1.609 0-2.783-.046-3.624a7 7 0 0 0-.1-.958a2 2 0 0 0-.063-.248a.4.4 0 0 0-.032-.074a.4.4 0 0 0-.055-.05a2 2 0 0 0-.208-.14a7 7 0 0 0-.864-.402c-.774-.315-1.877-.693-3.39-1.21l-.573-.197C13.305 2.962 12.658 2.75 12 2.75"/></g></svg>
+                        <a href="#" class="link-hover flex gap-1 items-center hover:text-purple-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                                    <path
+                                        d="M9.25 9a2.75 2.75 0 1 1 5.5 0a2.75 2.75 0 0 1-5.5 0M12 7.75a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5m0 4.5c-1.196 0-2.315.24-3.164.665c-.803.402-1.586 1.096-1.586 2.085v.063c-.002.51-.004 1.37.81 1.959c.378.273.877.448 1.495.559c.623.112 1.422.169 2.445.169s1.822-.057 2.445-.169c.618-.111 1.117-.286 1.495-.56c.814-.589.812-1.448.81-1.959V15c0-.99-.783-1.683-1.586-2.085c-.849-.424-1.968-.665-3.164-.665M8.75 15c0-.115.113-.421.757-.743c.6-.3 1.48-.507 2.493-.507s1.894.207 2.493.507c.644.322.757.628.757.743c0 .604-.039.697-.19.807c-.122.088-.373.206-.88.298c-.502.09-1.203.145-2.18.145s-1.678-.055-2.18-.145c-.507-.092-.758-.21-.88-.298c-.152-.11-.19-.203-.19-.807" />
+                                    <path
+                                        d="M8.723 2.051c1.444-.494 2.34-.801 3.277-.801s1.833.307 3.277.801l.727.25c1.481.506 2.625.898 3.443 1.23c.412.167.767.33 1.052.495c.275.16.55.359.737.626c.185.263.281.587.341.9c.063.324.1.713.125 1.16c.048.886.048 2.102.048 3.678v1.601c0 6.101-4.608 9.026-7.348 10.224l-.027.011c-.34.149-.66.288-1.027.382c-.387.1-.799.142-1.348.142c-.55 0-.96-.042-1.348-.142c-.367-.094-.687-.233-1.027-.382l-.027-.011C6.858 21.017 2.25 18.092 2.25 11.99v-1.6c0-1.576 0-2.792.048-3.679c.025-.446.062-.835.125-1.16c.06-.312.156-.636.34-.9c.188-.266.463-.465.738-.625c.285-.165.64-.328 1.052-.495c.818-.332 1.962-.724 3.443-1.23zM12 2.75c-.658 0-1.305.212-2.92.764l-.572.196c-1.513.518-2.616.896-3.39 1.21a7 7 0 0 0-.864.404a2 2 0 0 0-.208.139a.4.4 0 0 0-.055.05a.4.4 0 0 0-.032.074q-.03.082-.063.248a7 7 0 0 0-.1.958c-.046.841-.046 2.015-.046 3.624v1.574c0 5.176 3.87 7.723 6.449 8.849c.371.162.586.254.825.315c.228.059.506.095.976.095s.748-.036.976-.095c.24-.06.454-.153.825-.315c2.58-1.126 6.449-3.674 6.449-8.849v-1.574c0-1.609 0-2.783-.046-3.624a7 7 0 0 0-.1-.958a2 2 0 0 0-.063-.248a.4.4 0 0 0-.032-.074a.4.4 0 0 0-.055-.05a2 2 0 0 0-.208-.14a7 7 0 0 0-.864-.402c-.774-.315-1.877-.693-3.39-1.21l-.573-.197C13.305 2.962 12.658 2.75 12 2.75" />
+                                </g>
+                            </svg>
                             Accounts
                         </a>
                     </li>
                     <li class="relative">
-                        <a href="#"
-                            class="link-hover flex gap-1 items-center hover:text-purple-300 cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14.531 12.469L6.619 20.38a1 1 0 1 1-3-3l7.912-7.912m4.155-5.154A12.5 12.5 0 0 0 5.461 2.958A1 1 0 0 0 5.58 4.71a22 22 0 0 1 6.318 3.393"/><path d="M17.7 3.7a1 1 0 0 0-1.4 0l-4.6 4.6a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"/><path d="M19.686 8.314a12.5 12.5 0 0 1 1.356 10.225a1 1 0 0 1-1.751-.119a22 22 0 0 0-3.393-6.319"/></g></svg>
+                        <a href="#" class="link-hover flex gap-1 items-center hover:text-purple-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2">
+                                    <path
+                                        d="M14.531 12.469L6.619 20.38a1 1 0 1 1-3-3l7.912-7.912m4.155-5.154A12.5 12.5 0 0 0 5.461 2.958A1 1 0 0 0 5.58 4.71a22 22 0 0 1 6.318 3.393" />
+                                    <path
+                                        d="M17.7 3.7a1 1 0 0 0-1.4 0l-4.6 4.6a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z" />
+                                    <path
+                                        d="M19.686 8.314a12.5 12.5 0 0 1 1.356 10.225a1 1 0 0 1-1.751-.119a22 22 0 0 0-3.393-6.319" />
+                                </g>
+                            </svg>
                             Items
                         </a>
                     </li>
                     <li class="relative">
-                        <a href="#"
-                            class="link-hover flex gap-1 items-center hover:text-purple-300 cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M206.68 65.63C186.23 55.41 159 50 128 50s-58.23 5.41-78.68 15.63C29.41 75.58 18 89.57 18 104v48c0 14.43 11.41 28.42 31.32 38.37C69.77 200.59 97 206 128 206s58.23-5.41 78.68-15.63C226.59 180.42 238 166.43 238 152v-48c0-14.43-11.41-28.42-31.32-38.37m-152 10.74C73.21 67.1 99.25 62 128 62s54.79 5.1 73.32 14.37C217 84.21 226 94.28 226 104s-9 19.79-24.68 27.63C182.79 140.9 156.75 146 128 146s-54.79-5.1-73.32-14.37C39 123.79 30 113.72 30 104s9-19.79 24.68-27.63M122 157.93v36c-19.24-.48-37.07-3.28-52-8.11v-35.4c15.27 4.51 32.85 7.07 52 7.51m12 0c19.15-.44 36.73-3 52-7.52v35.4c-14.93 4.83-32.76 7.63-52 8.11ZM30 152v-23a76 76 0 0 0 19.32 13.36q4.16 2.07 8.68 3.88v35c-1.13-.52-2.24-1-3.32-1.58C39 171.79 30 161.72 30 152m171.32 27.63c-1.08.54-2.19 1.06-3.32 1.58v-35q4.51-1.81 8.68-3.88A76 76 0 0 0 226 129v23c0 9.72-9 19.79-24.68 27.63"/></svg>             
+                        <a href="#" class="link-hover flex gap-1 items-center hover:text-purple-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 256 256">
+                                <path fill="currentColor"
+                                    d="M206.68 65.63C186.23 55.41 159 50 128 50s-58.23 5.41-78.68 15.63C29.41 75.58 18 89.57 18 104v48c0 14.43 11.41 28.42 31.32 38.37C69.77 200.59 97 206 128 206s58.23-5.41 78.68-15.63C226.59 180.42 238 166.43 238 152v-48c0-14.43-11.41-28.42-31.32-38.37m-152 10.74C73.21 67.1 99.25 62 128 62s54.79 5.1 73.32 14.37C217 84.21 226 94.28 226 104s-9 19.79-24.68 27.63C182.79 140.9 156.75 146 128 146s-54.79-5.1-73.32-14.37C39 123.79 30 113.72 30 104s9-19.79 24.68-27.63M122 157.93v36c-19.24-.48-37.07-3.28-52-8.11v-35.4c15.27 4.51 32.85 7.07 52 7.51m12 0c19.15-.44 36.73-3 52-7.52v35.4c-14.93 4.83-32.76 7.63-52 8.11ZM30 152v-23a76 76 0 0 0 19.32 13.36q4.16 2.07 8.68 3.88v35c-1.13-.52-2.24-1-3.32-1.58C39 171.79 30 161.72 30 152m171.32 27.63c-1.08.54-2.19 1.06-3.32 1.58v-35q4.51-1.81 8.68-3.88A76 76 0 0 0 226 129v23c0 9.72-9 19.79-24.68 27.63" />
+                            </svg>
                             Robux
                         </a>
                     </li>
                     <li class="relative">
-                        <a href="#"
-                            class="link-hover flex gap-1 items-center hover:text-purple-300 cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                        <a href="#" class="link-hover flex gap-1 items-center hover:text-purple-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 48 48">
                                 <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
-                                    <path d="M42 4H6a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2h36a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z" />
+                                    <path
+                                        d="M42 4H6a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2h36a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z" />
                                     <path stroke-linecap="round" d="M4 24h13m14 0h13" />
                                     <path fill="currentColor" d="M24 31a7 7 0 1 0 0-14a7 7 0 0 0 0 14Z" />
                                 </g>
-                            </svg>                            Lootboxes
+                            </svg> Lootboxes
                         </a>
                     </li>
                 </ul>
@@ -83,13 +109,18 @@
                         <div>
                             Login
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5" data-v-0272af67=""><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true" data-slot="icon" class="w-5" data-v-0272af67="">
+                            <path fill-rule="evenodd"
+                                d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd"></path>
+                        </svg>
                     </div>
                 </a>
             </div>
         </nav>
-    </div>
-    <div class="header-mob d-xl-none d-block w-full">
+    </header>
+    <header class="header-mob d-xl-none d-block w-full">
         <nav class="menu w-full relative d-flex flex-column align-items-center">
             <div class="w-full d-flex justify-content-between align-items-center">
                 <button type="button" class="btn-dropdown w-10 h-10 bg-none block border-0">
@@ -99,12 +130,17 @@
                         <span id="line-third" class="line-3 w-7 bg-white h-05 absoulute d-hidden mb-2"></span>
                     </div>
                 </button>
-                <a href="#" class="block" >
+                <a href="#" class="block">
                     <div class="btn-login d-flex gap-1 rounded-20 px-4 p-2">
                         <div>
                             Login
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5" data-v-0272af67=""><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true" data-slot="icon" class="w-5" data-v-0272af67="">
+                            <path fill-rule="evenodd"
+                                d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd"></path>
+                        </svg>
                     </div>
                 </a>
             </div>
@@ -128,8 +164,12 @@
                     <a href="#">
                         <div class="px-3">
                             <div class="d-flex gap-3 align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 text-gray-200" data-v-0854d41a="">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                                    class="w-6 text-gray-200" data-v-0854d41a="">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25">
+                                    </path>
                                 </svg>
                                 Home
                             </div>
@@ -140,7 +180,8 @@
                     <div class="h-05 line-break"></div>
                 </li>
                 <li class="d-block py-3">
-                    <button type-="button" id="btn-dropdown-child" class="d-block bg-none w-full text-gray-200 border-0 p-2">
+                    <button type-="button" id="btn-dropdown-child"
+                        class="d-block bg-none w-full text-gray-200 border-0 p-2">
                         <div class="d-flex gap-2 justify-content-between align-items-center">
                             <div class="d-flex gap-2 align-items-center">
                                 <img src="./images/logo-btn-roblox.webp" class="w-8 h-8" />
@@ -148,8 +189,10 @@
                                     Roblox
                                 </span>
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                                </path>
                             </svg>
                         </div>
                     </button>
@@ -157,37 +200,40 @@
                         <ul>
                             <li class="item-child">
                                 <div class="d-flex align-items-center gap-2 p-3">
-                                    <img class="w-7 h-7" src="https://images.1v9.gg/lol logo 2-9174edcc168f.webp"/>
+                                    <img class="w-7 h-7" src="https://images.1v9.gg/lol logo 2-9174edcc168f.webp" />
                                     <span class="text-md">League of Legends</span>
                                 </div>
                             </li>
                             <li class="item-child">
                                 <div class="d-flex align-items-center gap-2 p-3">
-                                    <img class="w-7 h-7" src="https://images.1v9.gg/lol logo 2-9174edcc168f.webp"/>
+                                    <img class="w-7 h-7" src="https://images.1v9.gg/lol logo 2-9174edcc168f.webp" />
                                     <span class="text-md">League of Legends</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="d-flex align-items-center gap-2 p-3 item-child">
-                                    <img class="w-7 h-7" src="https://images.1v9.gg/wow icon-b0eb74251f04.webp"/>
+                                    <img class="w-7 h-7" src="https://images.1v9.gg/wow icon-b0eb74251f04.webp" />
                                     <span class="text-md">World of Warcraft</span>
                                 </div>
                                 <ul>
                                     <li>
                                         <div class="d-flex align-items-center gap-2 p-3 text-gray-400">
-                                            <img class="w-7 h-7 gray-scale" src="https://images.1v9.gg/destiny 2 icon-71efdcbdf089.webp"/>
+                                            <img class="w-7 h-7 gray-scale"
+                                                src="https://images.1v9.gg/destiny 2 icon-71efdcbdf089.webp" />
                                             <span class="text-md">Destiny 2</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="d-flex align-items-center gap-2 p-3 text-gray-400">
-                                            <img class="w-7 h-7 gray-scale" src="https://images.1v9.gg/destiny 2 icon-71efdcbdf089.webp"/>
+                                            <img class="w-7 h-7 gray-scale"
+                                                src="https://images.1v9.gg/destiny 2 icon-71efdcbdf089.webp" />
                                             <span class="text-md">Destiny 2</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="d-flex align-items-center gap-2 p-3 text-gray-400">
-                                            <img class="w-7 h-7 gray-scale" src="https://images.1v9.gg/destiny 2 icon-71efdcbdf089.webp"/>
+                                            <img class="w-7 h-7 gray-scale"
+                                                src="https://images.1v9.gg/destiny 2 icon-71efdcbdf089.webp" />
                                             <span class="text-md">Destiny 2</span>
                                         </div>
                                     </li>
@@ -202,8 +248,10 @@
                             <div class="d-flex gap-2 align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-gray-200" viewBox="0 0 24 24">
                                     <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
-                                        <path d="M9.25 9a2.75 2.75 0 1 1 5.5 0a2.75 2.75 0 0 1-5.5 0M12 7.75a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5m0 4.5c-1.196 0-2.315.24-3.164.665c-.803.402-1.586 1.096-1.586 2.085v.063c-.002.51-.004 1.37.81 1.959c.378.273.877.448 1.495.559c.623.112 1.422.169 2.445.169s1.822-.057 2.445-.169c.618-.111 1.117-.286 1.495-.56c.814-.589.812-1.448.81-1.959V15c0-.99-.783-1.683-1.586-2.085c-.849-.424-1.968-.665-3.164-.665M8.75 15c0-.115.113-.421.757-.743c.6-.3 1.48-.507 2.493-.507s1.894.207 2.493.507c.644.322.757.628.757.743c0 .604-.039.697-.19.807c-.122.088-.373.206-.88.298c-.502.09-1.203.145-2.18.145s-1.678-.055-2.18-.145c-.507-.092-.758-.21-.88-.298c-.152-.11-.19-.203-.19-.807"/>
-                                        <path d="M8.723 2.051c1.444-.494 2.34-.801 3.277-.801s1.833.307 3.277.801l.727.25c1.481.506 2.625.898 3.443 1.23c.412.167.767.33 1.052.495c.275.16.55.359.737.626c.185.263.281.587.341.9c.063.324.1.713.125 1.16c.048.886.048 2.102.048 3.678v1.601c0 6.101-4.608 9.026-7.348 10.224l-.027.011c-.34.149-.66.288-1.027.382c-.387.1-.799.142-1.348.142c-.55 0-.96-.042-1.348-.142c-.367-.094-.687-.233-1.027-.382l-.027-.011C6.858 21.017 2.25 18.092 2.25 11.99v-1.6c0-1.576 0-2.792.048-3.679c.025-.446.062-.835.125-1.16c.06-.312.156-.636.34-.9c.188-.266.463-.465.738-.625c.285-.165.64-.328 1.052-.495c.818-.332 1.962-.724 3.443-1.23zM12 2.75c-.658 0-1.305.212-2.92.764l-.572.196c-1.513.518-2.616.896-3.39 1.21a7 7 0 0 0-.864.404a2 2 0 0 0-.208.139a.4.4 0 0 0-.055.05a.4.4 0 0 0-.032.074q-.03.082-.063.248a7 7 0 0 0-.1.958c-.046.841-.046 2.015-.046 3.624v1.574c0 5.176 3.87 7.723 6.449 8.849c.371.162.586.254.825.315c.228.059.506.095.976.095s.748-.036.976-.095c.24-.06.454-.153.825-.315c2.58-1.126 6.449-3.674 6.449-8.849v-1.574c0-1.609 0-2.783-.046-3.624a7 7 0 0 0-.1-.958a2 2 0 0 0-.063-.248a.4.4 0 0 0-.032-.074a.4.4 0 0 0-.055-.05a2 2 0 0 0-.208-.14a7 7 0 0 0-.864-.402c-.774-.315-1.877-.693-3.39-1.21l-.573-.197C13.305 2.962 12.658 2.75 12 2.75"/>
+                                        <path
+                                            d="M9.25 9a2.75 2.75 0 1 1 5.5 0a2.75 2.75 0 0 1-5.5 0M12 7.75a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5m0 4.5c-1.196 0-2.315.24-3.164.665c-.803.402-1.586 1.096-1.586 2.085v.063c-.002.51-.004 1.37.81 1.959c.378.273.877.448 1.495.559c.623.112 1.422.169 2.445.169s1.822-.057 2.445-.169c.618-.111 1.117-.286 1.495-.56c.814-.589.812-1.448.81-1.959V15c0-.99-.783-1.683-1.586-2.085c-.849-.424-1.968-.665-3.164-.665M8.75 15c0-.115.113-.421.757-.743c.6-.3 1.48-.507 2.493-.507s1.894.207 2.493.507c.644.322.757.628.757.743c0 .604-.039.697-.19.807c-.122.088-.373.206-.88.298c-.502.09-1.203.145-2.18.145s-1.678-.055-2.18-.145c-.507-.092-.758-.21-.88-.298c-.152-.11-.19-.203-.19-.807" />
+                                        <path
+                                            d="M8.723 2.051c1.444-.494 2.34-.801 3.277-.801s1.833.307 3.277.801l.727.25c1.481.506 2.625.898 3.443 1.23c.412.167.767.33 1.052.495c.275.16.55.359.737.626c.185.263.281.587.341.9c.063.324.1.713.125 1.16c.048.886.048 2.102.048 3.678v1.601c0 6.101-4.608 9.026-7.348 10.224l-.027.011c-.34.149-.66.288-1.027.382c-.387.1-.799.142-1.348.142c-.55 0-.96-.042-1.348-.142c-.367-.094-.687-.233-1.027-.382l-.027-.011C6.858 21.017 2.25 18.092 2.25 11.99v-1.6c0-1.576 0-2.792.048-3.679c.025-.446.062-.835.125-1.16c.06-.312.156-.636.34-.9c.188-.266.463-.465.738-.625c.285-.165.64-.328 1.052-.495c.818-.332 1.962-.724 3.443-1.23zM12 2.75c-.658 0-1.305.212-2.92.764l-.572.196c-1.513.518-2.616.896-3.39 1.21a7 7 0 0 0-.864.404a2 2 0 0 0-.208.139a.4.4 0 0 0-.055.05a.4.4 0 0 0-.032.074q-.03.082-.063.248a7 7 0 0 0-.1.958c-.046.841-.046 2.015-.046 3.624v1.574c0 5.176 3.87 7.723 6.449 8.849c.371.162.586.254.825.315c.228.059.506.095.976.095s.748-.036.976-.095c.24-.06.454-.153.825-.315c2.58-1.126 6.449-3.674 6.449-8.849v-1.574c0-1.609 0-2.783-.046-3.624a7 7 0 0 0-.1-.958a2 2 0 0 0-.063-.248a.4.4 0 0 0-.032-.074a.4.4 0 0 0-.055-.05a2 2 0 0 0-.208-.14a7 7 0 0 0-.864-.402c-.774-.315-1.877-.693-3.39-1.21l-.573-.197C13.305 2.962 12.658 2.75 12 2.75" />
                                     </g>
                                 </svg>
                                 Accounts
@@ -216,10 +264,14 @@
                         <div class="px-3">
                             <div class="d-flex gap-2 align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-gray-200" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                        <path d="M14.531 12.469L6.619 20.38a1 1 0 1 1-3-3l7.912-7.912m4.155-5.154A12.5 12.5 0 0 0 5.461 2.958A1 1 0 0 0 5.58 4.71a22 22 0 0 1 6.318 3.393"/>
-                                        <path d="M17.7 3.7a1 1 0 0 0-1.4 0l-4.6 4.6a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"/>
-                                        <path d="M19.686 8.314a12.5 12.5 0 0 1 1.356 10.225a1 1 0 0 1-1.751-.119a22 22 0 0 0-3.393-6.319"/>
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path
+                                            d="M14.531 12.469L6.619 20.38a1 1 0 1 1-3-3l7.912-7.912m4.155-5.154A12.5 12.5 0 0 0 5.461 2.958A1 1 0 0 0 5.58 4.71a22 22 0 0 1 6.318 3.393" />
+                                        <path
+                                            d="M17.7 3.7a1 1 0 0 0-1.4 0l-4.6 4.6a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z" />
+                                        <path
+                                            d="M19.686 8.314a12.5 12.5 0 0 1 1.356 10.225a1 1 0 0 1-1.751-.119a22 22 0 0 0-3.393-6.319" />
                                     </g>
                                 </svg>
                                 Items
@@ -232,8 +284,9 @@
                         <div class="px-3">
                             <div class="d-flex gap-2 align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-gray-200" viewBox="0 0 256 256">
-                                    <path fill="currentColor" d="M206.68 65.63C186.23 55.41 159 50 128 50s-58.23 5.41-78.68 15.63C29.41 75.58 18 89.57 18 104v48c0 14.43 11.41 28.42 31.32 38.37C69.77 200.59 97 206 128 206s58.23-5.41 78.68-15.63C226.59 180.42 238 166.43 238 152v-48c0-14.43-11.41-28.42-31.32-38.37m-152 10.74C73.21 67.1 99.25 62 128 62s54.79 5.1 73.32 14.37C217 84.21 226 94.28 226 104s-9 19.79-24.68 27.63C182.79 140.9 156.75 146 128 146s-54.79-5.1-73.32-14.37C39 123.79 30 113.72 30 104s9-19.79 24.68-27.63M122 157.93v36c-19.24-.48-37.07-3.28-52-8.11v-35.4c15.27 4.51 32.85 7.07 52 7.51m12 0c19.15-.44 36.73-3 52-7.52v35.4c-14.93 4.83-32.76 7.63-52 8.11ZM30 152v-23a76 76 0 0 0 19.32 13.36q4.16 2.07 8.68 3.88v35c-1.13-.52-2.24-1-3.32-1.58C39 171.79 30 161.72 30 152m171.32 27.63c-1.08.54-2.19 1.06-3.32 1.58v-35q4.51-1.81 8.68-3.88A76 76 0 0 0 226 129v23c0 9.72-9 19.79-24.68 27.63"/>
-                                </svg>             
+                                    <path fill="currentColor"
+                                        d="M206.68 65.63C186.23 55.41 159 50 128 50s-58.23 5.41-78.68 15.63C29.41 75.58 18 89.57 18 104v48c0 14.43 11.41 28.42 31.32 38.37C69.77 200.59 97 206 128 206s58.23-5.41 78.68-15.63C226.59 180.42 238 166.43 238 152v-48c0-14.43-11.41-28.42-31.32-38.37m-152 10.74C73.21 67.1 99.25 62 128 62s54.79 5.1 73.32 14.37C217 84.21 226 94.28 226 104s-9 19.79-24.68 27.63C182.79 140.9 156.75 146 128 146s-54.79-5.1-73.32-14.37C39 123.79 30 113.72 30 104s9-19.79 24.68-27.63M122 157.93v36c-19.24-.48-37.07-3.28-52-8.11v-35.4c15.27 4.51 32.85 7.07 52 7.51m12 0c19.15-.44 36.73-3 52-7.52v35.4c-14.93 4.83-32.76 7.63-52 8.11ZM30 152v-23a76 76 0 0 0 19.32 13.36q4.16 2.07 8.68 3.88v35c-1.13-.52-2.24-1-3.32-1.58C39 171.79 30 161.72 30 152m171.32 27.63c-1.08.54-2.19 1.06-3.32 1.58v-35q4.51-1.81 8.68-3.88A76 76 0 0 0 226 129v23c0 9.72-9 19.79-24.68 27.63" />
+                                </svg>
                                 Robux
                             </div>
                         </div>
@@ -246,8 +299,12 @@
                     <a href="#">
                         <div class="px-3">
                             <div class="d-flex gap-2 align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 text-gray-200" data-v-0854d41a="">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                                    class="w-6 text-gray-200" data-v-0854d41a="">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9">
+                                    </path>
                                 </svg>
                                 Lootboxes
                             </div>
@@ -258,11 +315,14 @@
                     <a href="#">
                         <div class="px-3">
                             <div class="d-flex gap-2 align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 text-gray-200" data-v-0854d41a="">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                                    class="w-6 text-gray-200" data-v-0854d41a="">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z">
                                     </path>
                                 </svg>
-                                Become Affiliate 
+                                Become Affiliate
                             </div>
                         </div>
                     </a>
@@ -271,10 +331,14 @@
                     <a href="#">
                         <div class="px-3">
                             <div class="d-flex gap-2 align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 text-gray-200" data-v-0854d41a="">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"></path>
-                                </svg>         
-                                Blog 
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                                    class="w-6 text-gray-200" data-v-0854d41a="">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25">
+                                    </path>
+                                </svg>
+                                Blog
                             </div>
                         </div>
                     </a>
@@ -283,10 +347,14 @@
                     <a href="#">
                         <div class="px-3">
                             <div class="d-flex gap-2 align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 text-gray-200" data-v-0854d41a="">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"></path>
-                                </svg>         
-                                Contact Us  
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                                    class="w-6 text-gray-200" data-v-0854d41a="">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z">
+                                    </path>
+                                </svg>
+                                Contact Us
                             </div>
                         </div>
                     </a>
@@ -298,17 +366,22 @@
                     <a href="#">
                         <div class="px-3">
                             <div class="d-flex gap-2 align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 text-gray-200" data-v-0854d41a="">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
-                                </svg>   
-                                Sign In  
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                                    class="w-6 text-gray-200" data-v-0854d41a="">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z">
+                                    </path>
+                                </svg>
+                                Sign In
                             </div>
                         </div>
                     </a>
                 </li>
             </ul>
         </div>
-    </div>
+
+    </header>
     <script src="
     https://cdn.jsdelivr.net/npm/iconify@1.4.0/src/browser/index.min.js
     "></script>
@@ -316,4 +389,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="menu.js"></script>
 </body>
+
 </html>

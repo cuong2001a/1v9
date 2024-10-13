@@ -1,5 +1,5 @@
-@import 'common.css';
-@import 'checkout.css';
-@import 'footer.css';
-@import 'header.css';
-@import 'home.css';
+@import "common.css";
+@import "home.css";
+@import "checkout.css";
+@import "footer.css";
+@import "header.css";

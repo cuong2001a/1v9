@@ -1,152 +1,150 @@
-.btn-border{
-    border: 1px solid rgb(192 132 252);
-    color: rgb(192 132 252);
-    font-size: 16px;
+.btn-border {
+  border: 1px solid rgb(192 132 252);
+  color: rgb(192 132 252);
+  font-size: 16px;
 }
-.btn-border:hover{
-    background-color: rgb(168 85 247/var(--tw-bg-opacity));
-    --tw-bg-opacity: 1;
-    color: #fff;
+.btn-border:hover {
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  color: #fff;
 }
-.border-hover:hover{
-    border: 1px solid rgb(192 132 252);
+.border-hover:hover {
+  border: 1px solid rgb(192 132 252);
 }
-.btn-roblox{
-    border-color:#c084fc33;
-    border-width: 0;
-    background-color: initial;
-    color: #fff;
-    font-size: 16px;
+.btn-roblox {
+  border-color: #c084fc33;
+  border-width: 0;
+  background-color: initial;
+  color: #fff;
+  font-size: 16px;
 }
-.box-roblox{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.box-roblox {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.border-roblox{
-    border: 1px solid #1f29374d;
+.border-roblox {
+  border: 1px solid #1f29374d;
 }
 
-.card-slide{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border: 1px solid #e5e7eb1a;
-    transition-timing-function:cubic-bezier(.4,0,.2,1);
-    transition-duration: 0.3s;
-    transform: matrix(1, 0, 0, 1, 0, 0)
+.card-slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #e5e7eb1a;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
-.btn-card{
-    transition-duration: 0.2s;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    box-shadow: (0 0 #0000),(0 0 #0000),(0 20px 25px -5px #0000001a,0 8px 10px -6px #0000001a);
-    font-weight: 700;
-    color: #fff;
-    background-color: rgb(139 92 246);
-    border-radius: 10px;
-    width: 100%;
-    gap: 0.75rem;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
-    padding: 0.75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+.btn-card {
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: (0 0 #0000), (0 0 #0000),
+    (0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a);
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(139 92 246);
+  border-radius: 10px;
+  width: 100%;
+  gap: 0.75rem;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
-.perspective, .perspective-child{
-    transform: perspective(50em) rotateY(-12deg) rotateX(-4deg) scaleX(1);
+.perspective,
+.perspective-child {
+  transform: perspective(50em) rotateY(-12deg) rotateX(-4deg) scaleX(1);
 }
-.perspective-child-right{
-    transform: perspective(50em) rotateY(12deg) rotateX(-1deg) scaleX(1);
-    max-width: 100%;
+.perspective-child-right {
+  transform: perspective(50em) rotateY(12deg) rotateX(-1deg) scaleX(1);
+  max-width: 100%;
 }
-.perspective{
-    transform-style:preserve-3d
+.perspective {
+  transform-style: preserve-3d;
 }
-.card{
-    height: 250px;
-    width: 450px;
+.card {
+  height: 250px;
+  width: 450px;
 }
-.holder1{
-    overflow-x: auto !important;
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    width: 500%;
+.holder1 {
+  overflow-x: auto !important;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  width: 500%;
 }
-.line-card{
-    background-image: linear-gradient(to right, #a855f7, #2563eb);
+.line-card {
+  background-image: linear-gradient(to right, #a855f7, #2563eb);
 }
-.image-height{
-    height: 600px;
+.image-height {
+  height: 600px;
 }
-.image-height img{
-    opacity: 0.1;
+.image-height img {
+  opacity: 0.1;
 }
-.image-height img:hover{
-    opacity: 0.5;
+.image-height img:hover {
+  opacity: 0.5;
 }
-.item-banner{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+.item-banner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .collapse-content {
-    display: none; /* Ẩn nội dung ban đầu */
-    margin-top: 24px;
+  display: none; /* Ẩn nội dung ban đầu */
+  margin-top: 24px;
 }
 
 .slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .slides {
-    animation: scroll 12s linear infinite; /* Tốc độ cuộn */
+  animation: scroll 12s linear infinite; /* Tốc độ cuộn */
 }
 
-
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-66.66%); /* Di chuyển sang trái 2/3 */
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.66%); /* Di chuyển sang trái 2/3 */
+  }
 }
 
 @keyframes reverseScroll {
-    0% {
-        transform: translateX(-66.66%); /* Bắt đầu từ vị trí cuối cùng */
-    }
-    100% {
-        transform: translateX(0); /* Về vị trí ban đầu */
-    }
+  0% {
+    transform: translateX(-66.66%); /* Bắt đầu từ vị trí cuối cùng */
+  }
+  100% {
+    transform: translateX(0); /* Về vị trí ban đầu */
+  }
 }
 
-.holderBox{
-    width: 1000px;
-    overflow: hidden;
-    position: relative;
+.holderBoxContainer {
+  width: 100%;
+  /* Đặt chiều rộng thành 100% */
+  overflow: hidden;
+  position: relative;
 }
-.holderBox .carousel {
-    display: flex;
-    transition: transform 0.5s linear;
+
+.holderBoxCarousel {
+  display: flex;
+  transition: transform 0.5s linear;
+  width: 100%;
+  /* Chiều rộng tổng bằng 4 lần chiều rộng của 1 card */
 }
-.holderBox .card {
-    min-width: 100px;
-    height: 150px;
-    background-color: #4CAF50;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    border-radius: 10px;
-    font-size: 20px;
+
+.holderBoxCard {
+  min-width: 40%;
+  height: 250px;
 }

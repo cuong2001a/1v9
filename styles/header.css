@@ -3,107 +3,114 @@
     display: block;
 } */
 
-.header-nav{
-    padding-inline: 40px;
-    padding-block: 12px;
+.header-nav {
+  padding-inline: 40px;
+  padding-block: 12px;
 }
-.header-logo{
-    gap: 1.25rem;
+.header-logo {
+  gap: 1.25rem;
 }
 .header-logo > a > img {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .header-logo > a > img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .header-menu > ul {
-    padding: 16px;
+  padding: 16px;
 }
 
 .header-menu > ul > li {
-    margin-top: 0
+  margin-top: 0;
 }
-.header-menu > ul > li > a:hover{
-    color: rgb(216 180 254)
+.header-menu > ul > li > a:hover {
+  color: rgb(216 180 254);
 }
-.link-hover:hover::after{
-    width: 100%;
+.link-hover:hover::after {
+  width: 100%;
 }
-.link-hover::after{
-    width: 0;
-    background-color: #d8b4fe;
-    bottom: 0;
-    content: "";
-    height: 1px;
-    left: 0;
-    margin-bottom: -2px;
-    position: absolute;
-    transition: width .25s ease-in-out;
+.link-hover::after {
+  width: 0;
+  background-color: #d8b4fe;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  margin-bottom: -2px;
+  position: absolute;
+  transition: width 0.25s ease-in-out;
 }
-.btn-login{
-    border: 1px solid rgb(192 132 252);
-    color: rgb(192 132 252);
-    font-size: 16px;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: 0.3s;
-    transition-property: all;
+.btn-login {
+  border: 1px solid rgb(192 132 252);
+  color: rgb(192 132 252);
+  font-size: 16px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  transition-property: all;
 }
-.btn-login:hover{
-    border: 1px solid #c084fc80;
-    color: #c084fc80;
+.btn-login:hover {
+  border: 1px solid #c084fc80;
+  color: #c084fc80;
 }
 
-.header-mob{
-    /* display: none; */
-    position:fixed;
+.header-mob {
+  /* display: none; */
+  position: fixed;
 }
 
 .header-mob .menu {
-    padding-inline: 40px;
-    padding-block: 12px;
-    z-index: 50;
-    position:relative;
+  padding-inline: 40px;
+  padding-block: 12px;
+  z-index: 50;
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 13 31 / var(--tw-bg-opacity));
 }
-.header-mob .menu-nav ul li{
-    margin-top: 0
+.header-mob .menu-nav ul li {
+  margin-top: 0;
 }
-.menu-dropdown{
-    overflow: auto;
-    background-color: rgb(12 9 28 );
-    transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    z-index: 50;
-    position:fixed
+.menu-dropdown {
+  overflow: auto;
+  background-color: rgb(12 9 28);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 50;
+  position: fixed;
 }
-.menu-dropdown ul li{
-    margin-top:0;
+.menu-dropdown ul li {
+  margin-top: 0;
 }
-.menu-dropdown ul li.item:hover{
-    background-color: #6366f1bf;
+.menu-dropdown ul li.item:hover {
+  background-color: #6366f1bf;
 }
-.menu .btn-dropdown span{
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: 0.5s;
+.menu .btn-dropdown span {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
 }
 
-.menu-dropdown ul li .line-break{
-    background-color: #6b728033;
+.menu-dropdown ul li .line-break {
+  background-color: #6b728033;
 }
-.rotate-45{
-    transform: translate(0, 0) rotate(45deg) scale(1, 1);
+.rotate-45 {
+  transform: translate(0, 0) rotate(45deg) scale(1, 1);
 }
-.rotate--45{
-    transform: translate(0, 0) rotate(27deg) scale(1, 1);
+.rotate--45 {
+  transform: translate(0, 0) rotate(27deg) scale(1, 1);
 }
-.gray-scale{
-    filter: grayscale(100%)
+.gray-scale {
+  filter: grayscale(100%);
 }
-.active-link{
-    background-color: #6366f1bf;
+.active-link {
+  background-color: #6366f1bf;
 }
-.item-child:hover{
-    background-color: #c084fc33;
+.item-child:hover {
+  background-color: #c084fc33;
+}
+.sign-in:hover {
+  color: rgb(216 180 254);
 }

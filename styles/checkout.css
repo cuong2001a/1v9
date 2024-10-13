@@ -1,3 +1,8 @@
+.checkout-page {
+  height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+}
 .checkout-page .currency {
   padding: 0.5rem 0.75rem;
   border: 1px solid #d1d5db26;
@@ -92,7 +97,7 @@
   margin: 8px 0;
 }
 
-.payment-form input:checked+.payment-box {
+.payment-form input:checked + .payment-box {
   border-color: rgb(168 85 247);
 }
 
@@ -128,7 +133,7 @@
   transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-pay::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -173,6 +178,6 @@
 .box-chat:hover {
   background-color: #c084fc66;
 }
-.min-h-4{
+.min-h-4 {
   min-height: 1rem;
 }
